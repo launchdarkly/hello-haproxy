@@ -1,4 +1,4 @@
-# LaunchDarkly Lua Server-Side SDK NGINX example
+# LaunchDarkly Lua Server-Side SDK HAProxy example
 
 This is a minimal dockerized example of using the Lua SDK with [HAProxy](https://www.haproxy.org/).
 
