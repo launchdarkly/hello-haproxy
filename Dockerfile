@@ -16,6 +16,6 @@ RUN cd /tmp/lua-server-sdk/ && \
     luarocks make launchdarkly-server-sdk-1.0-0.rockspec
 
 COPY haproxy.cfg /etc/haproxy/haproxy.cfg
-COPY hello.lua /hello.lua
+COPY service.lua /service.lua
 
 CMD haproxy -d -f /etc/haproxy/haproxy.cfg
