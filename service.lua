@@ -7,7 +7,7 @@ local client = ld.clientInit({
     key = os.getenv("LD_SDK_KEY")
 }, 1000)
 
-core.register_service("hello", "http", function(applet)
+core.register_service("launchdarkly", "http", function(applet)
     applet:start_response()
 
     local user = ld.makeUser({
