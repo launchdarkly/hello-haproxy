@@ -8,7 +8,6 @@ local client = ld.clientInit({
 }, 1000)
 
 core.register_service("hello", "http", function(applet)
-    print "called"
     applet:start_response()
 
     local user = ld.makeUser({
