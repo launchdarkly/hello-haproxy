@@ -6,6 +6,16 @@ workflows:
     jobs:
       - build-test-linux
 
+  test-daily:
+    triggers:
+    - schedule:
+        cron: "0 6 * * *"
+        filters:
+          branches:
+            only: master
+    jobs:
+      - build-test-linux
+
 jobs:
   build-test-linux:
     docker:
