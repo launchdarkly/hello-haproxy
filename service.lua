@@ -11,7 +11,7 @@ core.register_service("launchdarkly", "http", function(applet)
     applet:start_response()
 
     local user = ld.makeUser({
-        key = "example-user-key"
+        key = "example-user-key",
         name = "Sandy"
     })
 
