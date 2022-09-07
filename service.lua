@@ -11,12 +11,13 @@ core.register_service("launchdarkly", "http", function(applet)
     applet:start_response()
 
     local user = ld.makeUser({
-        key = "abc"
+        key = "example-user-key",
+        name = "Sandy"
     })
 
     if client:boolVariation(user, os.getenv("LD_FLAG_KEY"), false) then
-        applet:send("<p>feature launched</p>")
+        applet:send("<p>Feature flag is true for this user</p>")
     else
-        applet:send("<p>feature not launched</p>")
+        applet:send("<p>Feature flag is false for this user</p>")
     end
 end)
