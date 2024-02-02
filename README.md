@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> Please see [Lua Server SDK](https://github.com/launchdarkly/lua-server-sdk) for the most up-to-date `hello-haproxy`. This repo is deprecated.
+
+
 # LaunchDarkly Lua server-side SDK HAProxy example
 
 We've built a minimal dockerized example of using the Lua SDK with [HAProxy](https://www.haproxy.org/). For more comprehensive instructions, you can visit the [Using the Lua SDK with HAProxy guide](https://docs.launchdarkly.com/guides/sdk/haproxy) or the [Lua reference guide](https://docs.launchdarkly.com/sdk/server-side/lua).
